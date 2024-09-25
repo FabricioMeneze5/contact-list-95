@@ -16,7 +16,7 @@ export const Container = styled.div`
     width: 100%;
     height: 95vh;
     margin: 0 auto;
-    padding: 32px;
+    padding: 16px;
     background-color: ${colors.lightGrey};
     border: solid 1px #000000;
     box-shadow: 2px 2px 3px;

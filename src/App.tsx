@@ -1,3 +1,4 @@
+import Header from './containers/Header'
 import GlobalStyle, { Background, Container } from './styles'
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
       <GlobalStyle />
       <Background>
         <Container>
-          <h2>Contact List 95</h2>
+          <Header />
         </Container>
       </Background>
     </>
