@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: "Iceland", sans-serif;
+    list-style: none;
   }
 `
 

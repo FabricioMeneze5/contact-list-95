@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import searchImage from '../../images/search.svg'
 
 export const HeaderCont = styled.header`
   display: flex;
@@ -12,7 +13,7 @@ export const H1 = styled.h1`
 
 export const SearchFill = styled.div`
   width: 50%;
-  height: 40px;
+  height: 32px;
   display: flex;
   align-items: center;
   background-color: #fff;
@@ -26,7 +27,7 @@ export const ButtonSearch = styled.button`
   border: none;
   background-color: transparent;
   cursor: pointer;
-  background-image: url('https://www.svgrepo.com/show/532552/search-alt-2.svg');
+  background-image: url(${searchImage});
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
