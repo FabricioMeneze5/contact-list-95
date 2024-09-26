@@ -1,5 +1,5 @@
 import Button from '../Button'
-import { ContCard, BackgroundCard, Form, ActionBar } from './styles'
+import { ContCard, BackgroundCard, Form, ActionBar, Input } from './styles'
 
 const Card = () => {
   return (
@@ -8,16 +8,16 @@ const Card = () => {
         <BackgroundCard>
           <Form>
             <li>
-              <img src="#" />
-              <input placeholder="Name" type="text" />
+              <img src="../../images/person.svg" />
+              <Input placeholder="Name" type="text" />
             </li>
             <li>
-              <img src="#" />
-              <input placeholder="tel" type="number" />
+              <img src="../../images/phone.svg" />
+              <Input placeholder="tel" type="number" />
             </li>
             <li>
-              <img src="#" />
-              <input placeholder="email" type="email" />
+              <img src="../../images/email.svg" />
+              <Input placeholder="email" type="email" />
             </li>
           </Form>
           <ActionBar>

@@ -5,6 +5,7 @@ export const HeaderCont = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 32px;
 `
 export const H1 = styled.h1`
   font-family: 'VT323', monospace;

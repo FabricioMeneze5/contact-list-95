@@ -1,13 +1,26 @@
 import Card from '../../components/Card'
+import { ListCards } from './styles'
 
 const Body = () => {
   return (
     <>
-      <ul>
+      <ListCards>
         <li>
           <Card />
         </li>
-      </ul>
+        <li>
+          <Card />
+        </li>
+        <li>
+          <Card />
+        </li>
+        <li>
+          <Card />
+        </li>
+        <li>
+          <Card />
+        </li>
+      </ListCards>
     </>
   )
 }
