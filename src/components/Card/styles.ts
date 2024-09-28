@@ -20,9 +20,16 @@ export const BackgroundCard = styled.div`
   border-radius: 8px;
 `
 
-export const Form = styled.ul`
-  display: block;
-  text-align: center;
+export const Li = styled.li`
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: 35px;
+  margin-bottom: 8px;
+`
+
+export const Img = styled.img`
+  height: 100%;
 `
 
 export const Input = styled.input`
@@ -31,7 +38,6 @@ export const Input = styled.input`
   background-color: #fff;
   border: solid 1px #000000;
   outline: none;
-  margin-bottom: 8px;
   margin-left: 8px;
 `
 
