@@ -1,3 +1,4 @@
+import AddButton from '../../components/AddButton'
 import Card from '../../components/Card'
 import { ListCards } from './styles'
 
@@ -23,19 +24,8 @@ const Body = () => {
         <li>
           <Card />
         </li>
-        <li>
-          <Card />
-        </li>
-        <li>
-          <Card />
-        </li>
-        <li>
-          <Card />
-        </li>
-        <li>
-          <Card />
-        </li>
       </ListCards>
+      <AddButton>+</AddButton>
     </>
   )
 }
