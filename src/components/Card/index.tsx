@@ -1,4 +1,5 @@
 import Button from '../Button'
+import { RedButton } from '../Button/styled'
 import * as S from './styles'
 
 const Card = () => {
@@ -23,7 +24,7 @@ const Card = () => {
         </S.Form>
         <S.ActionBar>
           <Button>Edit</Button>
-          <Button>Delete</Button>
+          <RedButton>Delete</RedButton>
         </S.ActionBar>
         <S.BackgroundCard />
       </S.ContCard>

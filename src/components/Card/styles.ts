@@ -7,7 +7,7 @@ export const ContCard = styled.div`
   justify-content: end;
   width: 100%;
   height: 100%;
-  padding: 0.5rem;
+  padding: 1rem;
   position: relative;
   border-radius: 0.5rem;
 
@@ -59,5 +59,6 @@ export const ActionBar = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 0.5rem;
   z-index: 1;
 `
