@@ -46,8 +46,9 @@ export const Img = styled.img`
 `
 
 export const Input = styled.input`
-  font-size: 20px;
+  font-size: 1.3rem;
   padding: 5px;
+  width: 80%;
   background-color: #fff;
   border: solid 1px #000000;
   outline: none;
