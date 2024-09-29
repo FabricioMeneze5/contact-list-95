@@ -7,9 +7,9 @@ export const ContCard = styled.div`
   justify-content: end;
   width: 100%;
   height: 100%;
-  padding: 8px;
+  padding: 0.5rem;
   position: relative;
-  border-radius: 8px;
+  border-radius: 0.5rem;
 
   &:hover > div {
     height: 100%;
@@ -24,7 +24,7 @@ export const BackgroundCard = styled.div`
   width: 100%;
   height: 85%;
   border: solid 1px black;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   transition: all ease 0.3s;
 `
 
@@ -37,8 +37,8 @@ export const Li = styled.li`
   display: flex;
   align-items: end;
   justify-content: center;
-  height: 35px;
-  margin-bottom: 8px;
+  height: 2rem;
+  margin-bottom: 0.5rem;
 `
 
 export const Img = styled.img`
@@ -51,7 +51,7 @@ export const Input = styled.input`
   background-color: #fff;
   border: solid 1px #000000;
   outline: none;
-  margin-left: 8px;
+  margin-left: 0.5rem;
 `
 
 export const ActionBar = styled.div`

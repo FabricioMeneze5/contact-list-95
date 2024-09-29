@@ -4,25 +4,25 @@ export const HeaderCont = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 `
 export const H1 = styled.h1`
   font-family: 'VT323', monospace;
-  font-size: 48px;
+  font-size: 3rem;
 `
 
 export const SearchFill = styled.div`
   width: 50%;
-  height: 32px;
+  height: 2rem;
   display: flex;
   align-items: center;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   border: solid 1px #000000;
 `
 
 export const ButtonSearch = styled.button`
-  width: 32px;
+  width: 2rem;
   height: 100%;
   border: none;
   background-color: transparent;
@@ -38,6 +38,6 @@ export const InputSearch = styled.input`
   width: 100%;
   background-color: transparent;
   border: none;
-  font-size: 32px;
+  font-size: 2rem;
   outline: none;
 `

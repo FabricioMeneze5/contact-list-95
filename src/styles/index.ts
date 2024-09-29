@@ -13,15 +13,16 @@ const GlobalStyle = createGlobalStyle`
 `
 
 export const Container = styled.div`
-    max-width: 768px;
+    // max-width: 768px;
+    max-width: 48rem;
     width: 100%;
     height: 95vh;
     margin: 0 auto;
-    padding: 32px;
+    padding: 2rem;
     background-color: ${colors.lightGrey};
     border: solid 1px #000000;
     box-shadow: 2px 2px 3px;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 
     h2 {
       font-family: "VT323", monospace;

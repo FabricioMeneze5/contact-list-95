@@ -1,40 +1,32 @@
 import Button from '../Button'
-import {
-  ContCard,
-  BackgroundCard,
-  Form,
-  Li,
-  Img,
-  ActionBar,
-  Input
-} from './styles'
+import * as S from './styles'
 
 const Card = () => {
   return (
     <>
-      <ContCard>
-        <Form>
+      <S.ContCard>
+        <S.Form>
           <ul>
-            <Li>
-              <Img src="../../../images/person.svg" />
-              <Input placeholder="Name" type="text" />
-            </Li>
-            <Li>
-              <Img src="../../../images/phone.svg" />
-              <Input placeholder="tel" type="number" />
-            </Li>
-            <Li>
-              <Img src="../../../images/email.svg" />
-              <Input placeholder="email" type="email" />
-            </Li>
+            <S.Li>
+              <S.Img src="../../../images/person.svg" />
+              <S.Input placeholder="Name" type="text" />
+            </S.Li>
+            <S.Li>
+              <S.Img src="../../../images/phone.svg" />
+              <S.Input placeholder="tel" type="number" />
+            </S.Li>
+            <S.Li>
+              <S.Img src="../../../images/email.svg" />
+              <S.Input placeholder="email" type="email" />
+            </S.Li>
           </ul>
-        </Form>
-        <ActionBar>
+        </S.Form>
+        <S.ActionBar>
           <Button>Edit</Button>
           <Button>Delete</Button>
-        </ActionBar>
-        <BackgroundCard />
-      </ContCard>
+        </S.ActionBar>
+        <S.BackgroundCard />
+      </S.ContCard>
     </>
   )
 }
