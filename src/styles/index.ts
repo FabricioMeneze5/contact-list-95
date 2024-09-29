@@ -28,9 +28,9 @@ export const Container = styled.div`
     overflow-y: auto;
     overflow-x: hidden;
 
-    // @media (max-width: 1024px) {
-    //   max-width: 80%;
-    // }
+    @media (max-width: 1023px) {
+      width: 95%;
+    }
   }
 `
 

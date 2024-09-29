@@ -13,11 +13,20 @@ export const HeaderCont = styled.header`
   top: 0;
   background-color: ${colors.lightGrey};
   z-index: 2;
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+  }
 `
 export const H1 = styled.h1`
   font-family: 'VT323', monospace;
   font-size: 3rem;
   text-align: center;
+
+  @media (max-width: 640px) {
+    font-size: 2.4rem;
+  }
 `
 
 export const SearchFill = styled.div`
