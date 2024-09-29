@@ -13,20 +13,20 @@ const GlobalStyle = createGlobalStyle`
 `
 
 export const Container = styled.div`
-    // max-width: 768px;
-    max-width: 48rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 64rem;
     width: 100%;
     height: 95vh;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0 2rem 2rem;
     background-color: ${colors.lightGrey};
     border: solid 1px #000000;
     box-shadow: 2px 2px 3px;
     border-radius: 0.5rem;
-
-    h2 {
-      font-family: "VT323", monospace;
-    }
+    overflow-y: auto;
+    overflow-x: hidden;
 
     // @media (max-width: 1024px) {
     //   max-width: 80%;

@@ -20,6 +20,21 @@ const Body = () => {
         <li>
           <Card />
         </li>
+        <li>
+          <Card />
+        </li>
+        <li>
+          <Card />
+        </li>
+        <li>
+          <Card />
+        </li>
+        <li>
+          <Card />
+        </li>
+        <li>
+          <Card />
+        </li>
       </ListCards>
     </>
   )

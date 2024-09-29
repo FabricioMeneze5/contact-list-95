@@ -26,6 +26,7 @@ export const BackgroundCard = styled.div`
   border: solid 1px black;
   border-radius: 0.5rem;
   transition: all ease 0.3s;
+  box-shadow: 1px 1px 3px;
 `
 
 export const Form = styled.form`
