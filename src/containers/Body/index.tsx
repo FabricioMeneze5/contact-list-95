@@ -1,11 +1,29 @@
 import AddButton from '../../components/AddButton'
 import Card from '../../components/Card'
-import { ListCards } from './styles'
+import { ContBody, ListCards } from './styles'
 
 const Body = () => {
   return (
-    <>
+    <ContBody>
       <ListCards>
+        <li>
+          <Card />
+        </li>
+        <li>
+          <Card />
+        </li>
+        <li>
+          <Card />
+        </li>
+        <li>
+          <Card />
+        </li>
+        <li>
+          <Card />
+        </li>
+        <li>
+          <Card />
+        </li>
         <li>
           <Card />
         </li>
@@ -26,7 +44,7 @@ const Body = () => {
         </li>
       </ListCards>
       <AddButton>+</AddButton>
-    </>
+    </ContBody>
   )
 }
 

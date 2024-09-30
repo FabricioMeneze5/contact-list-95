@@ -5,9 +5,9 @@ export const HeaderCont = styled.header`
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 1rem;
-  width: 101%;
+  width: 100%;
   height: auto;
-  padding: 0.5rem;
+  padding: 1rem 2rem 0;
   place-items: center;
   position: sticky;
   top: 0;
@@ -16,6 +16,7 @@ export const HeaderCont = styled.header`
 
   @media (max-width: 640px) {
     grid-template-columns: 1fr;
+    padding: 0.5rem 2rem 0.5rem;
     margin-bottom: 0;
   }
 `
@@ -26,6 +27,7 @@ export const H1 = styled.h1`
 
   @media (max-width: 640px) {
     font-size: 2.4rem;
+    margin-bottom: 0.3rem;
   }
 `
 

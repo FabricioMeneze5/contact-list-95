@@ -7,22 +7,12 @@ export const SAddButton = styled.button`
   width: 50px;
   height: 50px;
   border: solid 1px #fff;
-  position: fixed;
-  bottom: 10%;
-  right: 20%;
+  position: sticky;
+  bottom: 5%;
+  left: 95%;
   color: #fff;
   font-size: 2rem;
   font-weight: bold;
   z-index: 2;
   cursor: pointer;
-
-  @media (max-width: 1023px) {
-    bottom: 7%;
-    right: 10%;
-  }
-
-  @media (max-width: 640px) {
-    bottom: 5%;
-    right: 7%;
-  }
 `
