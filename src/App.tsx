@@ -2,11 +2,16 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import GlobalStyle, { Background, Container } from './styles'
 import Home from './pages/Home'
+import Register from './pages/Register'
 
 const routers = createBrowserRouter([
   {
     path: '/',
     element: <Home />
+  },
+  {
+    path: '/register',
+    element: <Register />
   }
 ])
 

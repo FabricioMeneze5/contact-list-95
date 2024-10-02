@@ -5,7 +5,7 @@ type Props = {
 }
 
 const AddButton = ({ children }: Props) => {
-  return <SAddButton>{children}</SAddButton>
+  return <SAddButton to="/register">{children}</SAddButton>
 }
 
 export default AddButton

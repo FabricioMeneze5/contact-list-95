@@ -1,5 +1,6 @@
 import Button from '../Button'
 import { RedButton } from '../Button/styled'
+import Input from '../Input'
 import * as S from './styles'
 
 const Card = () => {
@@ -10,15 +11,15 @@ const Card = () => {
           <ul>
             <S.Li>
               <S.Img src="../../../images/person.svg" />
-              <S.Input placeholder="Name" type="text" />
+              <Input />
             </S.Li>
             <S.Li>
               <S.Img src="../../../images/phone.svg" />
-              <S.Input placeholder="tel" type="number" />
+              <Input />
             </S.Li>
             <S.Li>
               <S.Img src="../../../images/email.svg" />
-              <S.Input placeholder="email" type="email" />
+              <Input />
             </S.Li>
           </ul>
         </S.Form>

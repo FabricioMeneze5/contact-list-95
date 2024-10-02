@@ -6,7 +6,7 @@ export const ContCard = styled.div`
   flex-direction: column;
   justify-content: end;
   width: 100%;
-  height: auto;
+  height: 100%;
   padding: 1rem;
   position: relative;
   border-radius: 0.5rem;
@@ -44,8 +44,7 @@ export const Li = styled.li`
 
 export const Img = styled.img`
   height: 100%;
-  -webkit-user-drag: none;
-}
+  margin-right: 0.5rem;
 `
 
 export const Input = styled.input`

@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom'
+
 import styled from 'styled-components'
 import colors from '../../styles/colors'
 
-export const SAddButton = styled.a`
+export const SAddButton = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,6 +20,7 @@ export const SAddButton = styled.a`
   z-index: 2;
   cursor: pointer;
   transition: all ease 0.3s;
+  text-decoration: none;
 
   &:hover {
     box-shadow: 0 0 7px 1px;
