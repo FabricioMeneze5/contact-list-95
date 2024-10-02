@@ -44,6 +44,8 @@ export const Li = styled.li`
 
 export const Img = styled.img`
   height: 100%;
+  -webkit-user-drag: none;
+}
 `
 
 export const Input = styled.input`

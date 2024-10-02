@@ -29,6 +29,7 @@ export const H1 = styled.h1`
   font-family: 'VT323', monospace;
   font-size: 3rem;
   text-align: center;
+  user-select: none;
 
   @media (max-width: 640px) {
     font-size: 2.4rem;

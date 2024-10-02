@@ -1,6 +1,14 @@
-import Body from './containers/Body'
-import Header from './containers/Header'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
 import GlobalStyle, { Background, Container } from './styles'
+import Home from './pages/Home'
+
+const routers = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />
+  }
+])
 
 function App() {
   return (
@@ -8,8 +16,7 @@ function App() {
       <GlobalStyle />
       <Background>
         <Container>
-          <Header />
-          <Body />
+          <RouterProvider router={routers} />
         </Container>
       </Background>
     </>
