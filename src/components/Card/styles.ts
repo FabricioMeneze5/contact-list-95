@@ -6,7 +6,7 @@ export const ContCard = styled.div`
   flex-direction: column;
   justify-content: end;
   width: 100%;
-  height: 100%;
+  height: auto;
   padding: 1rem;
   position: relative;
   border-radius: 0.5rem;

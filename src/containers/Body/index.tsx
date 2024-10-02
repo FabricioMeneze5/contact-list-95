@@ -5,6 +5,7 @@ import { ContBody, ListCards } from './styles'
 const Body = () => {
   return (
     <ContBody>
+      <AddButton>+</AddButton>
       <ListCards>
         <li>
           <Card />
@@ -43,7 +44,6 @@ const Body = () => {
           <Card />
         </li>
       </ListCards>
-      <AddButton>+</AddButton>
     </ContBody>
   )
 }

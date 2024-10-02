@@ -5,7 +5,7 @@ type Props = {
 }
 
 const AddButton = ({ children }: Props) => {
-  return <SAddButton type="button">{children}</SAddButton>
+  return <SAddButton>{children}</SAddButton>
 }
 
 export default AddButton

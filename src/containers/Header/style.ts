@@ -2,24 +2,29 @@ import styled from 'styled-components'
 import colors from '../../styles/colors'
 
 export const HeaderCont = styled.header`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 1rem;
-  width: 100%;
-  height: auto;
-  padding: 1rem 2rem 0;
-  place-items: center;
   position: sticky;
   top: 0;
-  background-color: ${colors.lightGrey};
+  padding: 0.5rem 2rem 0.3rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  margin-bottom: 0.2rem;
   z-index: 2;
+  background-color: ${colors.lightGrey};
 
   @media (max-width: 640px) {
-    grid-template-columns: 1fr;
     padding: 0.5rem 2rem 0.5rem;
     margin-bottom: 0;
   }
 `
+export const GridCont = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+`
+
 export const H1 = styled.h1`
   font-family: 'VT323', monospace;
   font-size: 3rem;
@@ -33,8 +38,7 @@ export const H1 = styled.h1`
 
 export const SearchFill = styled.div`
   display: flex;
-  width: 100%;
-  height: 80%;
+  height: 90%;
   background-color: #fff;
   border-radius: 0.5rem;
   border: solid 1px #000000;
@@ -58,6 +62,6 @@ export const InputSearch = styled.input`
   background-color: transparent;
   border: none;
   font-size: 2rem;
-  padding: 2px 0;
+  padding-left: 2px;
   outline: none;
 `

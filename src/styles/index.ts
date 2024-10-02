@@ -15,7 +15,6 @@ const GlobalStyle = createGlobalStyle`
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
     max-width: 64rem;
     width: 100%;
     height: 95vh;
@@ -24,8 +23,6 @@ export const Container = styled.div`
     border: solid 1px #000000;
     box-shadow: 2px 2px 3px;
     border-radius: 0.5rem;
-    overflow-y: auto;
-    overflow-x: hidden;
 
     @media (max-width: 1023px) {
       width: 95%;
