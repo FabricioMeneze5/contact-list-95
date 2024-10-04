@@ -8,6 +8,21 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas;
+
+  /*
+  OK create base redux files
+  OK create API
+
+  toggle action bar
+  toggle header
+  search task
+
+
+
+  edit task
+  delete task
+  add task
+  */
 }
+

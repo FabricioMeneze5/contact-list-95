@@ -36,7 +36,7 @@ export const Form = styled.form`
 
 export const Li = styled.li`
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
   height: 2rem;
   margin-bottom: 0.5rem;
@@ -45,6 +45,8 @@ export const Li = styled.li`
 export const Img = styled.img`
   height: 100%;
   margin-right: 0.5rem;
+  user-select: none;
+  pointer-events: none;
 `
 
 export const Input = styled.input`
