@@ -1,15 +1,17 @@
+import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 
-import Button from '../Button'
-import { RedButton } from '../Button/styled'
-import Input from '../Input'
 import * as S from './styles'
+import Button from '../Button'
+import { GreenButton, RedButton } from '../Button/styled'
+import Input from '../Input'
 import { remove } from '../../store/reducers/contacts'
 import ContactsClass from '../../models/Contacts'
 
 type Props = ContactsClass
 
 const Card = ({ name, phone, email, id }: Props) => {
+  const [editing, setEditing] = useState(Boolean)
   const dispatch = useDispatch()
 
   return (
@@ -32,8 +34,17 @@ const Card = ({ name, phone, email, id }: Props) => {
           </ul>
         </S.Form>
         <S.ActionBar>
-          <Button>Edit</Button>
-          <RedButton onClick={() => dispatch(remove(id))}>Delete</RedButton>
+          {editing ? (
+            <>
+              <GreenButton>Save</GreenButton>
+              <RedButton onClick={() => setEditing(false)}>Cancel</RedButton>
+            </>
+          ) : (
+            <>
+              <Button onClick={() => setEditing(true)}>Edit</Button>
+              <RedButton onClick={() => dispatch(remove(id))}>Delete</RedButton>
+            </>
+          )}
         </S.ActionBar>
         <S.BackgroundCard />
       </S.ContCard>
