@@ -1,22 +1,16 @@
-import {
-  HeaderCont,
-  H1,
-  SearchFill,
-  ButtonSearch,
-  InputSearch,
-  GridCont
-} from './style'
+import * as S from './style'
+
 const Header = () => {
   return (
-    <HeaderCont>
-      <GridCont>
-        <H1>Contact List 95&rsquo;</H1>
-        <SearchFill>
-          <ButtonSearch type="button" />
-          <InputSearch type="search" className="search" />
-        </SearchFill>
-      </GridCont>
-    </HeaderCont>
+    <S.HeaderCont>
+      <S.GridCont>
+        <S.H1>Contact List 95&rsquo;</S.H1>
+        <S.SearchFill>
+          <S.ButtonSearch type="button" />
+          <S.InputSearch type="search" className="search" />
+        </S.SearchFill>
+      </S.GridCont>
+    </S.HeaderCont>
   )
 }
 

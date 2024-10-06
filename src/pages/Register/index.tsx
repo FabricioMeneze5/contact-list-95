@@ -10,9 +10,9 @@ const Register = () => {
       <Header />
       <Container>
         <Form>
-          <Input />
-          <Input />
-          <Input />
+          <Input type="text" />
+          <Input type="number" />
+          <Input type="email" />
           <ActionBar>
             <Button>Add</Button>
             <RedButton>Cancel</RedButton>

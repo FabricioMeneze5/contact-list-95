@@ -1,10 +1,11 @@
+import { ButtonHTMLAttributes } from 'react'
 import * as S from './styled'
 
-type Props = {
-  children: string
-}
-const Button = ({ children }: Props) => {
-  return <S.Button type="button">{children}</S.Button>
+const Button = ({
+  children,
+  ...props
+}: ButtonHTMLAttributes<HTMLButtonElement>) => {
+  return <S.Button {...props}>{children}</S.Button>
 }
 
 export default Button

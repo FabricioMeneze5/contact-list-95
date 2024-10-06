@@ -1,10 +1,7 @@
+import { ButtonHTMLAttributes } from 'react'
 import { SAddButton } from './styled'
 
-type Props = {
-  children: string
-}
-
-const AddButton = ({ children }: Props) => {
+const AddButton = ({ children }: ButtonHTMLAttributes<HTMLButtonElement>) => {
   return <SAddButton to="/register">{children}</SAddButton>
 }
 

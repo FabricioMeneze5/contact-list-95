@@ -9,7 +9,6 @@ export const Button = styled.button`
   font-size: 1.4rem;
   color: #fff;
   border: 1px solid #fff;
-  border-radius: 0.5rem;
   cursor: pointer;
   background-color: ${colors.blue};
 `
