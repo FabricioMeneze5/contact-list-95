@@ -7,7 +7,7 @@ import { Container, ActionBar, Form } from './styled'
 const Register = () => {
   return (
     <>
-      <Header />
+      <Header creatingContact={true} />
       <Container>
         <Form>
           <Input type="text" />

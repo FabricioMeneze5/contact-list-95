@@ -1,9 +1,9 @@
 import { useSelector } from 'react-redux'
 import { RootReducer } from '../../store'
 
-import AddButton from '../../components/AddButton'
-import Card from '../../components/Card'
 import { ContBody, ListCards } from './styles'
+import Card from '../../components/Card'
+import AddButton from '../../components/AddButton'
 
 const Body = () => {
   const { contact } = useSelector((state: RootReducer) => state)
