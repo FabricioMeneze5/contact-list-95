@@ -11,6 +11,11 @@ export const Button = styled.button`
   border: 1px solid #fff;
   cursor: pointer;
   background-color: ${colors.blue};
+  transition: all ease 0.2s;
+
+  &:hover {
+    box-shadow: 0 0 3px 0.5px;
+  }
 `
 
 export const RedButton = styled(Button)`

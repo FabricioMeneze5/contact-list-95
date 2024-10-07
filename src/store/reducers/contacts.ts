@@ -31,6 +31,24 @@ const initialState: contactState = {
       phone: 931358823,
       email: 'Lucas-Carmos@live.com',
       id: 4
+    },
+    {
+      name: 'Debora Menezes',
+      phone: 931358825,
+      email: 'Debora-Menezes@live.com',
+      id: 5
+    },
+    {
+      name: 'João batista',
+      phone: 934358825,
+      email: 'Debora-Menezes@live.com',
+      id: 6
+    },
+    {
+      name: 'Fabricio da Silva',
+      phone: 931358834,
+      email: 'Debora-Menezes@live.com',
+      id: 7
     }
   ]
 }

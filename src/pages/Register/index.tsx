@@ -10,9 +10,9 @@ const Register = () => {
       <Header creatingContact={true} />
       <Container>
         <Form>
-          <Input type="text" />
-          <Input type="number" />
-          <Input type="email" />
+          <Input type="text" placeholder="Name" />
+          <Input type="number" placeholder="Phone" />
+          <Input type="email" placeholder="Email" />
           <ActionBar>
             <Button>Add</Button>
             <RedButton>Cancel</RedButton>
