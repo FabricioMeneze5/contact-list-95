@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux'
 import { RootReducer } from '../../store'
 
 import { ContBody, ListCards } from './styles'
-import Card from '../../components/Card'
+import Card from '../Card'
 import AddButton from '../../components/AddButton'
 
 const Body = () => {
