@@ -96,7 +96,7 @@ const Card = ({
             </>
           )}
         </S.ActionBar>
-        <S.BackgroundCard />
+        <S.BackgroundCard active={editing} />
       </S.ContCard>
     </>
   )

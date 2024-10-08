@@ -1,6 +1,10 @@
 import styled from 'styled-components'
 import colors from '../../styles/colors'
 
+type Props = {
+  active: boolean
+}
+
 export const ContCard = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,8 +20,8 @@ export const ContCard = styled.div`
   }
 `
 
-export const BackgroundCard = styled.div`
-  background-color: ${colors.bgCard};
+export const BackgroundCard = styled.div<Props>`
+  background-color: ${(props) => (props.active ? colors.blue : colors.bgCard)};
   position: absolute;
   bottom: 0;
   left: 0;
