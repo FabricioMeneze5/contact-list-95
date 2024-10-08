@@ -8,13 +8,7 @@ const contactsData: Contact[] = [
     id: 1
   },
   {
-    name: 'Laura Analu Moreira',
-    phone: 992565107,
-    email: 'lauraanalumoreira@sinelcom.com',
-    id: 2
-  },
-  {
-    name: 'Laura Analu Moreira',
+    name: 'Laura Analu',
     phone: 992565107,
     email: 'lauraanalumoreira@sinelcom.com',
     id: 2
@@ -72,6 +66,12 @@ const contactsData: Contact[] = [
     phone: 9858445334,
     email: 'lorenzo_alves@cdaia.com',
     id: 11
+  },
+  {
+    name: 'Laura Analu Moreira',
+    phone: 992565108,
+    email: 'lauraanadfdfda@sinelcom.com',
+    id: 12
   }
 ]
 
