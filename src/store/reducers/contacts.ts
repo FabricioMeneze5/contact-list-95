@@ -68,7 +68,10 @@ const contactSlice = createSlice({
       )
 
       if (contactIndex >= 0) {
-        state.items[contactIndex] = action.payload
+        state.items[contactIndex] = {
+          ...state.items[contactIndex],
+          ...action.payload
+        }
       }
     }
   }

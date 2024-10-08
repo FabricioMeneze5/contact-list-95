@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { RootReducer } from '../../store'
 
 import * as S from './styles'
 import Button from '../../components/Button'
@@ -18,31 +19,33 @@ const Card = ({
 }: Props) => {
   const dispatch = useDispatch()
   const [editing, setEditing] = useState(false)
-  const [name, setName] = useState('')
-  const [phone, setPhone] = useState(0)
-  const [email, setEmail] = useState('')
+  const [name, setName] = useState(startName)
+  const [phone, setPhone] = useState(startPhone)
+  const [email, setEmail] = useState(startEmail)
+
+  const contact = useSelector((state: RootReducer) =>
+    state.contact.items.find((contact) => contact.id === id)
+  )
 
   useEffect(() => {
-    if (startName.length > 0) {
-      setName(startName)
+    if (contact) {
+      setName(contact.name)
+      setPhone(contact.phone)
+      setEmail(contact.email)
     }
-    if (startPhone && !isNaN(startPhone)) {
-      setPhone(startPhone)
-    }
-    if (startEmail.length > 0) {
-      setEmail(startEmail)
-    }
-  }, [startName, startPhone, startEmail])
+  }, [contact])
 
   function cancelEdit() {
     setEditing(false)
-    setName(startName)
-    setPhone(startPhone)
-    setEmail(startEmail)
+    if (contact) {
+      setName(contact.name)
+      setPhone(contact.phone)
+      setEmail(contact.email)
+    }
   }
 
   function saveEdit() {
-    edit({ name, phone, email, id })
+    dispatch(edit({ name, phone, email, id }))
     setEditing(false)
   }
 
