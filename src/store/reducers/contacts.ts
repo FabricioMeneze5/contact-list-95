@@ -31,10 +31,22 @@ const contactSlice = createSlice({
           ...action.payload
         }
       }
+    },
+    register: (state, action: PayloadAction<Contact>) => {
+      const isDuplicate = state.items.find(
+        (contact) =>
+          contact.name.toLowerCase() === action.payload.name.toLowerCase()
+      )
+
+      if (isDuplicate) {
+        alert('Exist a contact with that name')
+      } else {
+        state.items.push(action.payload)
+      }
     }
   }
 })
 
-export const { remove, edit } = contactSlice.actions
+export const { remove, edit, register } = contactSlice.actions
 
 export default contactSlice.reducer
