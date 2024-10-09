@@ -58,4 +58,8 @@ export const InputSearch = styled.input`
   font-size: 2rem;
   padding-left: 2px;
   outline: none;
+
+  @media (max-width: 640px) {
+    margin-left: 30px;
+  }
 `

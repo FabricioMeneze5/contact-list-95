@@ -4,6 +4,7 @@ export const ContBody = styled.div`
   margin-bottom: 0.5rem;
   position: relative;
   overflow-y: hidden;
+  height: 100%;
 `
 
 export const ListCards = styled.ul`

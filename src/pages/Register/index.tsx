@@ -14,13 +14,13 @@ const Register = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const [name, setName] = useState('')
-  const [phone, setPhone] = useState(Number)
+  const [phone, setPhone] = useState<string | number>('')
   const [email, setEmail] = useState('')
 
   const registerContact = (event: FormEvent) => {
     event.preventDefault()
 
-    const contactToAdd = new Contact(name, phone, email, 15)
+    const contactToAdd = new Contact(name, Number(phone), email, 15)
     dispatch(registerReducer(contactToAdd))
     navigate('/')
   }
