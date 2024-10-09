@@ -23,6 +23,7 @@ export const Container = styled.div`
     border: solid 1px #000000;
     box-shadow: 2px 2px 3px;
     border-radius: 0.5rem;
+    overflow: hidden;
 
     @media (max-width: 1023px) {
       width: 95%;
