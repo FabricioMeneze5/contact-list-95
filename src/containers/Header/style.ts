@@ -43,23 +43,16 @@ export const SearchFill = styled.div`
   background-color: #fff;
   border-radius: 0.5rem;
   border: solid 1px #000000;
-`
-
-export const ButtonSearch = styled.button`
-  width: 2rem;
-  height: 100%;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
   background-image: url('../../../images/search.svg');
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  transform: scaleX(-1);
+  background-position: left;
+  background-size: contain;
 `
+
 export const InputSearch = styled.input`
   height: 100%;
   width: 100%;
+  margin-left: 40px;
   background-color: transparent;
   border: none;
   font-size: 2rem;

@@ -25,7 +25,6 @@ const Header = ({ creatingContact }: Props) => {
           <S.GridCont>
             <S.H1>Contact List 95&rsquo;</S.H1>
             <S.SearchFill>
-              <S.ButtonSearch type="button" />
               <S.InputSearch
                 type="text"
                 value={term}

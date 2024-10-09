@@ -13,19 +13,12 @@ const Body = () => {
     let filteredContact = items
 
     if (term != undefined) {
-      if (typeof term === 'string') {
-        filteredContact = filteredContact.filter(
-          (item) =>
-            item.name.toLowerCase().search(term.toLocaleLowerCase()) >= 0 ||
-            item.email.toLowerCase().search(term.toLocaleLowerCase()) >= 0 ||
-            item.phone.toString().search(term)
-          // corrigir o erro ao pesquisar por numero
-        )
-      } else if (typeof term === 'number') {
-        filteredContact = filteredContact.filter((item) =>
-          item.phone.toString().search(term.toString())
-        )
-      }
+      filteredContact = filteredContact.filter(
+        (item) =>
+          item.name.toLowerCase().search(term.toLocaleLowerCase()) >= 0 ||
+          item.email.toLowerCase().search(term.toLocaleLowerCase()) >= 0 ||
+          item.phone.toString().includes(term)
+      )
       return filteredContact
     } else {
       return items

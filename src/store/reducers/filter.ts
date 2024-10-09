@@ -1,18 +1,18 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 type FilterState = {
-  term?: string | number
+  term?: string
 }
 
 const initialState: FilterState = {
-  term: undefined
+  term: ''
 }
 
 const filterSlice = createSlice({
   name: 'filter',
   initialState,
   reducers: {
-    changeFilter: (state, action: PayloadAction<string | number>) => {
+    changeFilter: (state, action: PayloadAction<string>) => {
       state.term = action.payload
     }
   }
