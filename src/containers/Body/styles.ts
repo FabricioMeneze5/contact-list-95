@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const ContBody = styled.div`
   margin-bottom: 0.5rem;
   position: relative;
-  flex-grow: 1;
   overflow-y: hidden;
 `
 
