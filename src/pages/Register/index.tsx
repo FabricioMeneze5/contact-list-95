@@ -20,7 +20,7 @@ const Register = () => {
   const registerContact = (event: FormEvent) => {
     event.preventDefault()
 
-    const contactToAdd = new Contact(name, Number(phone), email, 15)
+    const contactToAdd = new Contact(name, Number(phone), email, 0)
     dispatch(registerReducer(contactToAdd))
     navigate('/')
   }

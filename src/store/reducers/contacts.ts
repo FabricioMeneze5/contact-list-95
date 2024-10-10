@@ -32,7 +32,7 @@ const contactSlice = createSlice({
         }
       }
     },
-    register: (state, action: PayloadAction<Contact>) => {
+    register: (state, action: PayloadAction<Omit<Contact, 'id'>>) => {
       const isDuplicate = state.items.find(
         (contact) =>
           contact.name.toLowerCase() === action.payload.name.toLowerCase()
@@ -41,7 +41,12 @@ const contactSlice = createSlice({
       if (isDuplicate) {
         alert('Exist a contact with that name')
       } else {
-        state.items.push(action.payload)
+        const lastContact = state.items[state.items.length - 1]
+        const newContact = {
+          ...action.payload,
+          id: lastContact ? lastContact.id + 1 : 1
+        }
+        state.items.push(newContact)
       }
     }
   }
