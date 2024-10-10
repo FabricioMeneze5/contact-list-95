@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { useNavigate } from 'react-router-dom'
 
 import Contact from '../../models/Contacts'
 import contactsData from '../../models/contactsData'
@@ -33,13 +34,24 @@ const contactSlice = createSlice({
       }
     },
     register: (state, action: PayloadAction<Omit<Contact, 'id'>>) => {
-      const isDuplicate = state.items.find(
-        (contact) =>
-          contact.name.toLowerCase() === action.payload.name.toLowerCase()
+      const { name, email, phone } = action.payload
+
+      const nameDuplicate = state.items.find(
+        (contact) => contact.name.toLowerCase() === name.toLowerCase()
+      )
+      const emailDuplicate = state.items.find(
+        (contact) => contact.email.toLowerCase() === email.toLowerCase()
+      )
+      const phoneDuplicate = state.items.find(
+        (contact) => contact.phone === phone
       )
 
-      if (isDuplicate) {
-        alert('Exist a contact with that name')
+      if (nameDuplicate) {
+        alert('name already exists')
+      } else if (emailDuplicate) {
+        alert('Email already exists')
+      } else if (phoneDuplicate) {
+        alert('Phone already exists')
       } else {
         const lastContact = state.items[state.items.length - 1]
         const newContact = {
@@ -47,6 +59,7 @@ const contactSlice = createSlice({
           id: lastContact ? lastContact.id + 1 : 1
         }
         state.items.push(newContact)
+        alert('sucesso')
       }
     }
   }

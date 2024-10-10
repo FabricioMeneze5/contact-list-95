@@ -22,7 +22,6 @@ const Register = () => {
 
     const contactToAdd = new Contact(name, Number(phone), email, 0)
     dispatch(registerReducer(contactToAdd))
-    navigate('/')
   }
 
   return (
