@@ -2,7 +2,7 @@ import Contact from './Contacts'
 
 const contactsData: Contact[] = [
   {
-    name: 'Fabricio da Silva Menezes',
+    name: 'Fabricio Menezes',
     phone: 931358823,
     email: 'Fabricio-Menezes@live.com',
     id: 1
@@ -10,7 +10,7 @@ const contactsData: Contact[] = [
   {
     name: 'Laura Analu',
     phone: 992565107,
-    email: 'lauraanalumoreira@sinelcom.com',
+    email: 'lauramoreira@sinel.com',
     id: 2
   },
   {
