@@ -7,5 +7,4 @@ export const SInput = styled.input`
   background-color: #fff;
   border: solid 1px #000000;
   outline: none;
-  margin-bottom: 0.5rem;
 `

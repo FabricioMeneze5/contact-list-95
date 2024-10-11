@@ -18,6 +18,10 @@ export const ContCard = styled.div`
   &:hover > div {
     height: 100%;
   }
+
+  input {
+    margin-bottom: 0.5rem;
+  }
 `
 
 export const BackgroundCard = styled.div<Props>`
