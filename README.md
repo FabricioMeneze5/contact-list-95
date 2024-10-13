@@ -1,46 +1,124 @@
-# Getting Started with Create React App
+# 📓 Contact List 95'
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [English](#English)
+- [Português](#Português)
 
-## Available Scripts
+### Links
 
-In the project directory, you can run:
+- **[GitHub](https://github.com/FabricioMeneze5/contact-list-95)**
+- **[Contact List 95'](https://contact-list-95.vercel.app/)**
 
-### `npm start`
+### Autor: Fabricio Menezes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **[LinkedIn](https://www.linkedin.com/in/fabricio-meneze5/)**
+- **[GitHub](https://www.github.com/FabricioMeneze5)**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## English
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### ⚜ Description
 
-### `npm run build`
+Contact List 95' is an application that helps you manage contacts in a simple and efficient way. It was developed as part of an educational project from EBAC, and it shows the use of modern front-end development technologies. Now, it is available as part of my portfolio to demonstrate my skills in web and mobile development.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ⚙ Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js
+- React Native
+  - React Router DOM
+  - React Hook Form
+- Redux
+  - Redux Toolkit
+- TypeScript
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Styling
 
-### `npm run eject`
+- Styled Components
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Code Standardization
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- ESLint
+- Prettier
+- EditorConfig
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### ✨ Features
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### User
 
-## Learn More
+- Create new contacts
+- Edit contacts
+  - Change name, email, and phone number
+- Visual highlight to show which contact is being edited
+- Delete contacts
+- Search
+  - Search by name, email, and phone number
+- Hover effects on contacts
+- Hover effects on buttons
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Developer
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Dynamic ID generation when creating a new contact
+- Validation during registration
+  - Prevent repeated names, emails, or phone numbers
+  - Prevent empty fields
+  - Validate correct phone numbers
+  - Validate correct emails
+- Use of React Router DOM to avoid page reloads when navigating to the registration page
+- Block selection and drag of the title and images on the card to prevent bugs
+
+---
+
+---
+
+## Português
+
+### ⚜ Descrição
+
+Contact List 95' é uma aplicação que permite gerenciar contatos de forma simples e eficiente. Desenvolvido como parte de um projeto educativo da EBAC, ele serve para demonstrar o uso de diversas tecnologias modernas de desenvolvimento front-end. Agora, está disponível como uma parte do meu portfólio para mostrar minhas habilidades em desenvolvimento web e mobile.
+
+### ⚙ Tecnologias Utilizadas
+
+- Node.js
+- React Native
+  - React Router DOM
+  - React Hook Form
+- Redux
+  - Redux Toolkit
+- TypeScript
+
+#### Estilização
+
+- Styled Components
+
+#### Padronização do Código
+
+- ESLint
+- Prettier
+- EditorConfig
+
+### ✨ Funcionalidades
+
+#### Usuário
+
+- Criar novos contatos
+- Editar contatos
+  - Alterar nome, e-mail e telefone
+- Destaque visual para indicar o contato que está sendo editado
+- Deletar contatos
+- Pesquisar
+  - Pesquisa por nome, e-mail e número de telefone
+- Efeitos de hover sobre os contatos
+- Efeitos de hover sobre os botões
+
+#### Dev
+
+- Geração dinâmica de ID ao criar um novo contato
+- Validação durante o registro
+  - Evitar nomes, e-mails ou números repetidos
+  - Prevenção de registro de campos vazios
+  - Validação de números de telefone válidos
+  - Validação de e-mails válidos
+- Uso do React Router DOM para evitar recarregamento ao navegar para a página de registro
+- Bloqueio de seleção e arrasto do título e imagens do card para prevenir bugs
+
+---

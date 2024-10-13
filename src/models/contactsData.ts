@@ -18,6 +18,12 @@ const contactsData: Contact[] = [
     phone: 985586829,
     email: 'sabrina.mariah.caldeira@sitran.com',
     id: 3
+  },
+  {
+    name: 'Gustavo Adler',
+    phone: 955121349,
+    email: 'Gustavo_Adler@gmail.com',
+    id: 4
   }
 ]
 
